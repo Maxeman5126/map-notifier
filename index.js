@@ -92,7 +92,7 @@ module.exports = function myDbg(mod) {
 		let item = Number(itm.substring(ixitem+5,(ixq>0 ? ixq : itm.length)))
 		let dbid = itm.substring(ixdbid+5)
 		//TODO: display item with appropriate dbid if available
-		if (!(item in mod.settings.whiteList)) return;
+		if (!(item in mod.settings.whitelist)) return;
 		const itemString = `${MSG.BLU("Map Notifier: ")}${linkItem(item)}${MSG.BLU(" picked up by ")} ${MSG.clr(myLoot ? mod.game.me.name : sysMsg.tokens.PartyPlayerName,Seco)}`
 		//TODO: configure option for notice chat vs party chat or both.
 		mod.settings.notifyParty ? MSG.partyOut(itemString) : MSG.party(itemString);
@@ -103,9 +103,7 @@ module.exports = function myDbg(mod) {
 	}
 
 	function sSpawnDropItem(event){
-		mod.log('drop item spawned');
-		mod.log(mod.settings.whiteList);
-		if(!(event.item in mod.settings.whiteList && event.owners.some(owner => owner === mod.game.me.playerId))) return;
+		if(!(event.item in mod.settings.whitelist && event.owners.some(owner => owner === mod.game.me.playerId))) return;
 		//spawn a marker item
 		spawnMarker(event.gameId,event.loc);
 		//Update droppedItems list with the new item
