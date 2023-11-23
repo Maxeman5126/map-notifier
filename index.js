@@ -42,7 +42,7 @@ module.exports = function myDbg(mod) {
 				Object.keys(mod.settings.whitelist).forEach(key => {
 					mod.command.message(`${linkItem(Number(key))} tip: ${mod.settings.whitelist[key]}`);
 				});
-			} else {			
+			} else {
 				const matchedId = id.match(regexId);
 				if (!matchedId) return mod.command.message(`${id} is not a valid item id, consult readme for an example`);
 				const parsedId = parseInt(matchedId[1], 10);
