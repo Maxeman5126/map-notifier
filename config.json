@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "data": {
+        "whitelist": {
+            "206858": "Go to Tulufan then head south to the three trees.",
+            "206859": "Go to Frontera then head north into the cave.",
+            "206860": "Go to Bastion. Local TP to Channelworks. Jump east off the bridge.",
+            "206861": "Go to Acarum. Local TP to Gloomhaunt Sentry Post",
+            "206862": "Go to Pathfinder Post. Local TP to Field Base Valiance. go southwest to a floating platform staircase. Go in the cave to the blue coils."
+        },
+        "enabled": true,
+        "notifyParty": true,
+        "tips": true,
+        "markers": true,
+        "markerItem": "88704"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "map-notifier",
+    "author": "Maxeman",
+    "description": "Automatic alerts for Naslow's maps that drop in dungeons, and says who got it.",
+    "options": {
+        "niceName": "Map Notifier",
+        "reloadable": true,
+		"settingsVersion": 1,
+		"settingsFile": "config.json"
+    },
+    "disableAutoUpdate": true,
+    "version": "11/23/2023"
+}
