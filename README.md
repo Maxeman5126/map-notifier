@@ -1,4 +1,4 @@
-# auto-banker
+# map-notifier
 
 Automatic alerts for Naslow's maps that drop in dungeons, and says who got it.
 ![](https://i.imgur.com/a6XxIQU.png)
